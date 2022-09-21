@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Montserrat, sans-serif;
+    font-weight: 600;
+}
+a {
+    text-decoration: none; 
+}
+
+.padre {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.margen-interno {
+    padding: 0 20px;
+}
+    .header {
+        background: url(../img/collares/miloacc-50.JPG);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+    }
+        .menu {
+            /* background: #f07dea; */
+            background: rgba(67, 64, 64, 0.3);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+            .logo {
+                flex: 1 1 auto;
+                color:#ffffff;
+                margin:0 0 0 10px;
+                font-family: 'Qwitcher Grypen', cursive;
+                font-size: 2em;
+            }
+            .logo:hover {
+                color: rgb(97, 206, 231); 
+                font-weight: bolder;
+                text-shadow: black 0.1em 0.1em 0.2em
+            }
+           
+            .nav {
+                flex: 5 1 auto;
+                text-align: center;
+            }
+                .nav a {
+                    color:#ffffff;
+                    font-size: 0.75em;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover {
+                    color: rgb(97, 206, 231); 
+                    font-weight: bolder;
+                    text-shadow: black 0.1em 0.1em 0.2em
+                }
+            .social {
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .social a{
+                    font-size: 18px;
+                    color:#ffffff;
+                    padding: 0 5px;
+                }
+                .social a:hover {
+                    color: rgb(97, 206, 231); 
+                    font-weight: bolder;
+                    text-shadow: black 0.1em 0.1em 0.2em
+                }
+        .texto-principal {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+            .texto-principal h1{
+                font-family: 'Montserrat Alternates', sans-serif;
+                text-shadow: black 0.1em 0.1em 0.2em;
+                font-size: 2em;
+                color:#ffffff;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+    .section_previa {
+        background: #e8e3e3;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        /* margin: 10px 0px; */
+    }     
+        .section_previa h2{
+            color:#7a7676;
+            font-size: 1.2em;
+            margin: 40px 0;
+            text-shadow:none;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+    .section {
+        background: #e8e3e3;
+        display: flex;
+    }
+        .articulos {
+            background: #e8e3e3;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article {
+                flex: 1 1 45%;
+                background: #ececec;
+                margin:0.5em;
+            }
+            .article .enlace-productos{
+                display: inline-block;
+                background: #d9d4f1;
+            }
+            .article img {
+                width: 100%;
+            }
+            .article p{
+                padding: 5px 10px;
+                font-weight: 400;
+                text-transform: uppercase;
+                color: #444;
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin: 5px;
+            }
+            .article h3 {
+                color:#fff;
+                font-size: 13px;
+                padding: 10px 0;
+                margin-top: -80px;
+                margin-left: 10px;
+            }
+            .article h2 {
+                color:#ffff;
+                font-size: 25px;
+                text-transform: uppercase;
+                padding: 0px 0px 10px 0px;
+                margin-left: 10px;
+            }
+            .article h2:hover {
+                color:cornflowerblue;
+            }
+            .article .enlace-productos:hover{
+                background: #cbd0e2;
+                opacity: 0.7;
+                border: 0.03em solid #908e96;
+            }
+    .aside-inferior {
+        display: flex;
+        flex-flow:column nowrap;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+    }     
+        .aside-inferior h3 {
+            color:#000;
+            padding: 2em;
+            font-weight: 400;
+        }   
+            .aside-inferior span {
+                color: cornflowerblue;
+                font-weight: 800;
+            }
+        .form-Newsletter form{
+            color: #000;
+        }
+            .fieldset-Newsletter {
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                padding: 2em;
+                border: none;
+                background: #f6fbfb;
+            }
+    .footer {
+        background: #f7f7f7;
+        display: flex;
+        justify-content: center;
+        /* margin-top: 5px; */
+    }
+        .pie {
+            /* background: #B2A4FF; */
+            text-align: center;
+        }
+        .pie a{
+            color:rgb(89, 22, 73);
+            font-size: 11px;
+            text-transform: uppercase;
+            padding: 10px;
+            letter-spacing: 2px;
+        }
+
+/*  ESTILOS DE LA PAGINA CONTACTO.HTML */
+    .header-contacto {
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }    
+    #main-contacto {
+        background: #e8e3e3;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }  
+        .escribenos {
+            flex: 2 1 auto;
+            text-align: center;
+        }
+
+        .datos-contacto {
+            flex: 1 1 auto;
+            text-align: center;
+        }
+
+    
+
+ /* MEDIA QUERY  */
+@media all and (max-width: 1120px) {
+    .section {
+        flex-direction: column;
+    }
+    .menu {
+        flex-direction: column;
+        height: auto;
+    }
+    .aside {
+        display:flex;
+        justify-content: center;
+    }
+    h1{
+        font-size:15px;
+    }
+    .texto-principal {
+        height: 450px;
+    }
+}
+
+@media all and (max-width: 750px) {
+    .articulos {
+        flex-direction: column;
+    }
+    .off {
+        display: none;
+    }
+    .nav a {
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width: 400px) {
+    .aside {
+        flex-direction: column;
+    }
+}

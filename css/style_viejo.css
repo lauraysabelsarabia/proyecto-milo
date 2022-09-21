@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+header {
+    width: 98%;
+    height: 140px;
+    margin: 10px auto 0px;
+    padding: 10px;
+    /* background: linear-gradient(left, #99ede9, #96f4f1, #f376f1);  */
+    background:-webkit-linear-gradient(right,#80f3d2,#99ede9, #96f4f1, #d69bd5);
+}
+.img1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+}
+.h1_header {
+    float:right;
+    /* font-family: 'Anek Malayalam', sans-serif; */
+    /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+    font-family: 'Dancing Script', cursive;
+    font-weight: lighter;
+    font-size: 5rem;
+    color: #8767dc;
+    /* text-shadow: -3px 3px #ffffff, -3px -3px #ffffff, 3px -3px #ffffff, 3px 3px #f3f3f2, 6px 6px #6ac7c2; */
+}
+
+nav.nav1 {
+    width: 98%;
+    height: 80px;
+    /* margin: 10px; */
+    /* padding: 10px 0px; */
+    margin: 0px auto 10px;
+}
+nav.nav1 ul {
+    border-top: #d69bd5 1px solid;
+    background:-webkit-linear-gradient(right,#80f3d2,#99ede9, #96f4f1, #d69bd5);
+    display: flex;
+    list-style: none;
+} 
+nav.nav1 ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav.nav1 ul li a:hover {
+    background-color: #f380e8;
+    color: white;
+}
+main {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    grid-template-columns:  50px 100px 200px;
+    grid-template-rows: 400px 50px;
+    grid-gap: 15px;
+    grid-auto-flow: column;
+    grid-auto-columns: 50px;
+}
+}
+.section-imagen {
+
+}
