@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Proyecto de sitio web MILO ACCESORIOS: tienda de bisutería y avalorios -->
+<html lang="es-ES">
+	<head>
+		<title>Milo Accesorios</title>		
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Milo accesorios">
+		<meta name="application-name" content="www.miloaccesorios.com">
+		<meta name="keywords" content="milo accesorios">
+		<meta name="generator" content="Notepad++">
+		<meta name="author" content="Laura Sarabia">
+        <script src="https://kit.fontawesome.com/354a34164b.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Barlow&family=Dosis&family=Montserrat&family=Ms+Madi&family=Passions+Conflict&family=Qwitcher+Grypen&family=Reem+Kufi+Ink&family=Roboto&display=swap" rel="stylesheet">
+		<link rel="icon" href="./img/Milo LOGO.ico" type="image/x-icon" sizes="16x16"> 
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+        <header class="header">
+            <div class="menu margen-interno">
+                <a class="logo" href="index.html">Milo Accesorios</a>
+                <nav class="nav-header">
+                    <ul>
+                        <li><a href="./index.html"><i class="fa-solid fa-house"></i><span class="off">Inicio</span></a></li>
+                        <li><a href="nosotros.html"><i class="fa-solid fa-user"></i><span class="off">Nosotros</span></a></li>
+                        <li><a href="#"><i class="fa-regular fa-gem"></i><span class="off">Categorías</span></a></li>
+                        <li> <a href="#"><i class="fa-solid fa-hands-holding-circle"></i><span class="off">Personaliza</span></a></li>
+                        <li><a href="./contacto.html"><i class="fa-regular fa-envelope"></i><span class="off">Contacto</span></a></li>
+                    </ul>
+                </nav>
+                <div class="social">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/miloaccesorio/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="texto-principal margen-interno">
+                <h1 class="h1-principal">Haz que tu verdadera identidad prevalezca.</h1>
+            </div>
+        </header>
+		<main class="padre">
+            <section class="section_previa margen-interno">
+                <h2>Un accesorio puede cambiar todo tu outfit, y tu momento...</h2>
+            </section>
+            <section class="section margen-interno">
+                <div class="articulos">
+                    <article class="article">
+                        <a class="enlace-productos" href="#">
+                            <img src="./img/miloacc-29_mediana.jpg" alt="">
+                            <h3>Para toda ocación</h3>
+                            <h2>Collares</h2>
+                            <p>Cada collar es una pieza única realizadas manualmente, de todos los tamaños. Con materiales naturales.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="#">
+                            <img src="./img/miloacc-127_mediana.jpg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Pulseras</h2>
+                            <p>Para toda ocación, personales, para parejas, amistad, en diversos materiales, metal, piedas, cuero cintas.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="#">
+                            <img src="./img/miloacc-102_mediani.jpg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Pendientes</h2>
+                            <p>Este accesorio enmarca tu rostro, pueden ser cortos, largos, medios, en diversos colores, de hilo, de piedras o cristal.</p>
+                        </a>
+                    </article>
+                    <article class="article">
+                        <a class="enlace-productos" href="#">
+                            <img src="./img/paragafas_mediano.jpeg" alt="">
+                            <h3>Variedad</h3>
+                            <h2>Otros accesorios</h2>
+                            <p>Adicionalmente puedes tener una linda cuerda para colgar tus gafas, llaves o cualquier objeto que no quieras perder de ista.</p>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <aside class="aside-inferior">
+                <h3>Suscríbete a nuestra <span>Newsletter</span></h3>
+                <form class="form-Newsletter">
+                    <fieldset class="fieldset-Newsletter">
+                            <legend>Los campos nombre, teléfono y email son obligatorios</legend>
+                            <div id="divNombre">
+                                <label for="nombre">Nombres: </label>
+                                <input  type="text" id="txtNombre" name="nombre" placeholder="Nombre [2-100]">
+                            </div>
+                            <div id="divApellidos">
+                                <label for="nombre">Apellidos: </label>
+                                <input  type="text" id="txtApellidos" name="apellidos" placeholder="Apellidos [2-100]">
+                            </div>
+                            <div id="divTlfF">
+                                <label for="telefonoFijo">Teléfono Fijo: </label>
+                                <input  type="text" id="txtTelefonoFijo" name="telefonoFijo" placeholder="Telefono Fijo">
+                            </div>
+                            <div id="divFNac">
+                                <label for="fnacimiento">Fecha de Nacimiento:</label>
+                                <input type="date" id="txtFNac" name="fnacimiento" placeholder="dd/mm/aaaa">
+                            </div>
+                            <div id="divEmail">
+                                <label for="email">E-mail:</label>
+                                <input  type="text" id="txtEmail" name="email" placeholder="usuario@proveedor.dominio">
+                            </div>
+                            <div id="divCasillas">
+                                Acepto las políticas de privacidad <input type="checkbox" name="extra" value="Extra1">
+                            </div>
+                            <input type="submit" value="Suscribirme" class="envio-Newsletter">
+                    </fieldset>
+                </form>
+            </aside>
+            <footer class="footer margen-interno">
+                <nav class="pie">
+                    <a href="#">Desarrollado por Laura Sarabia</a>
+                </nav>
+            </footer>
+        </main>
+	</body>
+</html>
