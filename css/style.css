@@ -116,7 +116,7 @@ a,li {
             display: flex;
         }
             .social a{
-                /* flex: 1 1 auto; */
+                flex: 1 1 auto;
                 font-size: 18px;
                 color:#ffffff;
                 padding: 0 10px;
@@ -298,17 +298,22 @@ a,li {
         height: 100%;
         /* margin-top: 5px; */
     }
-        .pie {
-            /* background: #B2A4FF; */
-            text-align: center;
+        .social {
+            display: flex;
         }
-        .pie a{
-            color:rgb(89, 22, 73);
-            font-size: 11px;
-            text-transform: uppercase;
-            padding: 10px;
-            letter-spacing: 2px;
-        }
+            .social a{
+                flex: 1 1 auto;
+                font-size: 18px;
+                color:#6e43ee;
+                padding: 0 10px;
+            }
+            .social a:hover {
+                color: rgb(97, 206, 231); 
+                font-weight: bolder;
+                text-shadow: black 0.1em 0.1em 0.2em
+            }
+        
+        
 
 /*  ESTILOS DE LA PAGINA CONTACTO.HTML */
     .header-contacto {
