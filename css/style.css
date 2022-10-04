@@ -49,31 +49,19 @@ a,li {
     height: 100vh;
 }
     .menu {
-        /* background: #f07dea; */
         background: rgba(67, 64, 64, 0.3);
         display: flex;
-        /* flex-flow: row; */
-        /* flex-flow: row nowrap; */
         flex-flow: row;
-        height: 60px;
+        height: 80px;
         align-items: center;
         justify-content: space-between;
         border-bottom: 1px solid rgba(255,255,255,.5);
     }
-        .logo {
-            color:#ffffff;
-            margin:0 0 0 10px;
-            /* font-family: 'Qwitcher Grypen', cursive; */
-            font-family: 'Alexandra';
-            font-size: 2em;
-            font-weight: lighter;
-            letter-spacing: 4px;
+        .logo-img {
+            padding: 0.8vh;
+            height: 10vh;
         }
-        .logo:hover {
-            color: rgb(97, 206, 231); 
-            font-weight: bolder;
-            text-shadow: black 0.1em 0.1em 0.2em
-        }
+
         .nav-header {
             flex: grow 2;
         }
@@ -104,41 +92,31 @@ a,li {
                 display:none;
                 position: absolute;
                 width: fit-content;
-                margin-left: 30px;
-                padding: 5px;
+                padding: 15px;
+            }
+            .nav-header ul li ul li {
+                padding: 10px;
+                text-align: left;
             }
             .nav-header li:hover > ul {
                 display:block;
+                background: rgba(131, 126, 126, 0.3);
+                border-bottom: 1pxsolid rgba(255, 255, 255, 0.237);
+
             }
 
-
-        .social {
-            display: flex;
-        }
-            .social a{
-                flex: 1 1 auto;
-                font-size: 18px;
-                color:#ffffff;
-                padding: 0 10px;
-            }
-            .social a:hover {
-                color: rgb(97, 206, 231); 
-                font-weight: bolder;
-                text-shadow: black 0.1em 0.1em 0.2em
-            }
     .texto-principal {
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
-        text-transform: uppercase;
     }
         .texto-principal h1.h1-principal{
-            font-family: 'Aref Ruqaa Ink', serif;
-            text-shadow: black 0.1em 0.1em 0.2em;
-            font-size: 2em;
+            font-family: 'Alexandra';
+            text-shadow: black 0.1em 0.1em 0.6em;
+            font-size: 4em;
             color:#ffffff;
-            font-weight: 300;
+            font-weight: 100;
             text-align: center;
             letter-spacing: 5px;
 
@@ -158,7 +136,6 @@ a,li {
         flex-flow: row wrap;
         align-items: center;
         justify-content: center;
-        /* margin: 10px 0px; */
     }     
             .section_previa h2{
                 color:#7a7676;
@@ -166,7 +143,6 @@ a,li {
                 margin: 40px 0;
                 text-shadow:none;
                 font-weight: 400;
-                /* text-transform: uppercase; */
                 text-align: center;
                 font-family: 'Thank_you';
             }
@@ -223,6 +199,8 @@ a,li {
                 opacity: 0.7;
                 border: 0.03em solid #908e96;
             }
+
+    /* ESTILO DEL FORMULARIO PARA EL NEWSLETTER */
     .aside-inferior {
         display: flex;
         flex-flow:column wrap;
@@ -247,7 +225,7 @@ a,li {
             font-size: 0.9em;
             background-color: #edebdb;
             font-family: 'Dosis', sans-serif;
-            width: 30%;
+            width: 40%;
         }
             .fieldset-Newsletter {
                 display: flex;
@@ -257,20 +235,24 @@ a,li {
                 border: none;
             }
 
-                .fieldset-Newsletter div {
+                .fieldset-Newsletter div.item-formulario {
                     padding: 5px;
                     display:flex;
                     justify-content:space-between;
                     width: 100%;
                 }
 
-                .fieldset-Newsletter div input {
+                .fieldset-Newsletter legend {
+                    text-align: center;
+                }
+
+                .fieldset-Newsletter div.item-formulario input {
                     font-family: 'Dosis', sans-serif;
                     width: 50%;
                     border: none;
                     margin-left: 20px ;
                 }
-                .fieldset-Newsletter div input#txtFNac {
+                .fieldset-Newsletter div.item-formulario input#txtFNac {
                     width: 40%;
                     
                 }
@@ -285,25 +267,31 @@ a,li {
                     border-radius: 10%;
                     border: #cdcbb4 1px solid;
                     align-self: center;
-
-
                 }            
-
             
     .footer {
-        background: #f7f7f7;
+        /* background: #f7f7f7; */
+        background: rgba(67, 64, 64, 0.2);
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        height: 100%;
-        /* margin-top: 5px; */
+        margin-top: 5px;
+        padding: 3vh;;
     }
+        .subtitulo{
+            font-size: 0.9em;
+            width: 80%;
+        }
+        .subtitulo span {
+            font-family: adelia;
+            font-size: 1em;
+        }
         .social {
             display: flex;
         }
             .social a{
                 flex: 1 1 auto;
-                font-size: 18px;
+                font-size: 1.5em;
                 color:#6e43ee;
                 padding: 0 10px;
             }
@@ -313,34 +301,6 @@ a,li {
                 text-shadow: black 0.1em 0.1em 0.2em
             }
         
-        
-
-/*  ESTILOS DE LA PAGINA CONTACTO.HTML */
-    .header-contacto {
-        background-position: center;
-        background-attachment: contain;
-        background-size: cover;
-        display: flex;
-        flex-flow: column nowrap;
-    }    
-    #main-contacto {
-        background: #e8e3e3;
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-    }  
-        .escribenos {
-            flex: 2 1 auto;
-            text-align: center;
-        }
-
-        .datos-contacto {
-            flex: 1 1 auto;
-            text-align: center;
-        }
-
     
 
  /* MEDIA QUERY  */
@@ -365,13 +325,6 @@ a,li {
 }
 
 @media all and (max-width: 950px) {
-    .section {
-        flex-direction: column;
-    }
-    .menu {
-        flex-direction: column nowrap;
-        height: auto;
-    }
     .nav-header ul li {
         flex-direction: row;
     }
@@ -385,6 +338,10 @@ a,li {
     .texto-principal {
         height: 450px;
     }
+    .form-Newsletter {
+        width: 50%;
+    }
+    
 }
 
 @media all and (max-width: 750px) {
@@ -401,10 +358,34 @@ a,li {
     .nav a {
         font-size: 20px;
     }
+    .nav-header ul li ul {
+        display:none;
+        position: absolute;
+        width: fit-content;
+        padding: 10px;
+    }
+    .nav-header ul li ul li {
+        padding: 1px;
+        text-align: left;
+    }
+    
+    .form-Newsletter {
+        width: 60%;
+    }
+    .fieldset-Newsletter input.envio-Newsletter  {
+        width:50%;
+    }  
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
     .aside {
         flex-direction: column;
     }
+    .form-Newsletter {
+        width: 80%;
+    }
+    .fieldset-Newsletter input.envio-Newsletter  {
+        width:35%;
+    }            
 }
+
